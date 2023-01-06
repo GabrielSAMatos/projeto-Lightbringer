@@ -51,6 +51,7 @@ header > p{
 a#header{
     color: black;
 }
+
 section#video{
     background-color: var(--cor01);
     position: relative;
