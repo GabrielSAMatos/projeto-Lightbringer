@@ -1,2 +1,139 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Ssombra';
+    src: url('fonts/Manuskript\ Gothisch\ UNZ1A.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Csombra';
+    src: url('fonts/Sketch\ Gothic\ School.ttf') format('truetype');
+}
+
+:root{
+    --cor01: #F74D4A;
+    --cor02: #F50400;
+    --cor03: #C20300;
+    --cor04: #800200;
+    --cor05: #383332;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    font-family: 'Csombra';
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor04));
+}
+
+header{
+    background-image: linear-gradient(to right, var(--cor03), var(--cor05), var(--cor03));
+    color: black;
+    text-align: center;
+    font-family: 'Ssombra';
+    font-style: italic;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.082)
+}
+
+header > h1{
+    padding-top: 50px;
+    font-size: 7vw;
+    font-variant: small-caps;
+}
+
+header > p{
+    padding-bottom: 30px;
+    font-size: 2vw;
+}
+
+a#header{
+    color: black;
+}
+section#video{
+    background-color: var(--cor01);
+    position: relative;
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+    margin: auto;
+}
+
+section#video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+section{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 20px;
+    font-size: 5vw;
+    line-height: 2em;
+}
+
+section.fora{
+    color: black;
+}
+
+section.dentro{
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+
+}
+
+section.dentro > p{
+    background-color: #383332c4;
+    color: white;
+    width: 73vw;
+    
+}
+
+section#img01{
+    background-image: url('imagens/background\ village.jpeg');
+    
+}
+
+section#img02{
+    background-image: url('imagens/background\ fogo.jpeg');
+    background-position: center center;
+}
+
+section#img03{
+    background-image: url('imagens/background\ lightbringer.webp');
+    background-position: center center;
+}
+
+p#lightbringer{
+    text-align: center;
+    font-size: 1em;
+}
+
+section#elmo{
+    background-image: url('imagens/gif\ elmo.gif');
+    padding-bottom: 84vh;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.3px;
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
